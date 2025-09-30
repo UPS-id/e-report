@@ -26,6 +26,7 @@ section {
     width: 600px;
 }
 
+
 @media (max-width: 1042px) {
     .hero .col img {
         width: 400px;
