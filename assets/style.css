@@ -26,6 +26,11 @@ section {
     width: 600px;
 }
 
+.card-img-top {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 
 @media (max-width: 1042px) {
     .hero .col img {
