@@ -17,12 +17,16 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/idn.png" alt="Logo" width="30" class="d-inline-block align-text-top">
@@ -55,10 +59,11 @@
 
     <!-- Hero -->
     <section id="hero">
-        <div class="container py-5">
+        <div class="container py-5 mt-5">
             <div
-                class="hero flex-nowrap row align-items-center justify-content-between flex-column gap-5 flex-md-row gap-md-0">
-                <div class="col text-center text-md-start">
+                class="hero flex-nowrap row align-items-center justify-content-between flex-column gap-5 flex-md-row gap-md-0 overflow-hidden">
+                <div class="col text-center text-md-start" data-aos="fade-right" data-aos-duration="1200"
+                    data-aos-delay="100">
                     <h1 class="fw-bold">Welcome <br>
                         To The <span class="text-primary">E-Report App</span> <br>
                         2025</h1>
@@ -66,11 +71,14 @@
                         your school environment. Experience simple access and transparency for every report you make.
                     </p>
                     <div>
-                        <a href="#about" class="btn btn-primary">About Us</a>
-                        <a href="#recent-report" class="btn btn-outline-primary">Start Reporting</a>
+                        <a href="#about" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="400"
+                            data-aos-duration="900">About Us</a>
+                        <a href="#recent-report" class="btn btn-outline-primary" data-aos="zoom-in" data-aos-delay="600"
+                            data-aos-duration="900">Start Reporting</a>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center justify-content-lg-end">
+                <div class="col d-flex justify-content-center justify-content-lg-end" data-aos="fade-left"
+                    data-aos-duration="1200" data-aos-delay="300">
                     <img src="assets/img/hero.png" alt="Hero Image" class="img-fluid">
                 </div>
             </div>
@@ -79,15 +87,16 @@
     <!-- Hero End -->
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="py-5 mt-5 pt-5">
         <div class="container">
-            <div class="about row mb-4">
-                <div class="col text-center text-md-start">
+            <div class="about row">
+                <div class="col text-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                     <h1 class="fw-bold mb-4 text-primary">About Us</h1>
                     <p class="lh-lg mb-4">E-Report is a digital platform designed to support reporting and monitoring
                         various activities in schools, from academics to facilities. We are committed to providing the
                         best service for comfort and progress together.</p>
-                    <img src="assets/img/about.png" alt="About Us Image" class="img-fluid">
+                    <img src="assets/img/about.png" alt="About Us Image" class="img-fluid w-75" data-aos="zoom-in"
+                        data-aos-delay="500" data-aos-duration="1000">
                 </div>
             </div>
         </div>
@@ -97,25 +106,28 @@
     <!-- Services -->
     <section id="services" class="py-5">
         <div class="container">
-            <div class="mb-5">
+            <div class="mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <h1 class="fw-bold mb-4 text-primary">Services</h1>
                 <p>E-Report provides academic, facility, and anonymous reporting services. Every report will be handled
                     professionally and transparently by our team.</p>
             </div>
             <div class="services row gap-3 p-2 md-3">
-                <div class="col pt-4 shadow bg-primary-subtle text-primary-emphasis rounded-3">
+                <div class="col pt-4 shadow bg-primary-subtle text-primary-emphasis rounded-3" data-aos="flip-left"
+                    data-aos-delay="200" data-aos-duration="900">
                     <i class="fa-solid fa-graduation-cap mb-3"></i>
                     <h4 class="mb-3 fw-bold">Academic Report</h4>
                     <p class="lh-lg">Report academic issues or needs, such as grades, schedules, or learning activities
                         easily and quickly.</p>
                 </div>
-                <div class="col pt-4 shadow bg-primary-subtle text-primary-emphasis rounded-3">
+                <div class="col pt-4 shadow bg-primary-subtle text-primary-emphasis rounded-3" data-aos="flip-left"
+                    data-aos-delay="400" data-aos-duration="900">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
                     <h4 class="mb-3 fw-bold">Facility Report</h4>
                     <p class="lh-lg">Submit complaints or requests for school facility repairs, such as classrooms,
                         laboratories, or other public amenities.</p>
                 </div>
-                <div class="col pt-4 shadow bg-primary-subtle text-primary-emphasis rounded-3">
+                <div class="col pt-4 shadow bg-primary-subtle text-primary-emphasis rounded-3" data-aos="flip-left"
+                    data-aos-delay="600" data-aos-duration="900">
                     <i class="fa-solid fa-user-secret"></i>
                     <h4 class="mb-3 fw-bold">Anonymous Report</h4>
                     <p class="lh-lg">Report incidents or problems anonymously to protect your privacy, such as bullying
@@ -129,13 +141,13 @@
     <!-- Recent Report -->
     <section id="recent-report">
         <div class="container">
-            <div class="mb-5">
+            <div class="mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <h1 class="fw-bold mb-4 text-primary">Recent Report</h1>
                 <p>Here are the latest reports submitted to the E-Report system. Each report will be verified and
                     followed up by the relevant team.</p>
             </div>
             <div class="services row">
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
                     <div class="card">
                         <div
                             style="height: 300px; overflow: hidden; justify-content: center; align-items: center; display: flex; background-color: rgb(68, 68, 68);">
@@ -158,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="350" data-aos-duration="900">
                     <div class="card">
                         <div
                             style="height: 300px; overflow: hidden; justify-content: center; align-items: center; display: flex; background-color: rgb(68, 68, 68);">
@@ -181,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">
                     <div class="card">
                         <div
                             style="height: 300px; overflow: hidden; justify-content: center; align-items: center; display: flex; background-color: rgb(68, 68, 68);">
@@ -204,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="650" data-aos-duration="900">
                     <div class="card">
                         <div
                             style="height: 300px; overflow: hidden; justify-content: center; align-items: center; display: flex; background-color: rgb(68, 68, 68);">
@@ -227,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="800" data-aos-duration="900">
                     <div class="card">
                         <div
                             style="height: 300px; overflow: hidden; justify-content: center; align-items: center; display: flex; background-color: rgb(68, 68, 68);">
@@ -251,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-3">
+            <div class="text-center mt-3" data-aos="fade-up" data-aos-delay="900">
                 <a href="#"
                     class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
                     See More <i class="fa-solid fa-arrow-right"></i></a>
@@ -263,14 +275,14 @@
     <!-- FAQ -->
     <section id="faq" class="py-5">
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="fw-bold mb-4 text-primary">FAQ</h1>
                 <p>Here are some frequently asked questions about E-Report. If you have other questions, feel free to
                     contact us.</p>
             </div>
             <div class="accordion pt-4" id="accordionFlushExample">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button bg-primary text-white" type="button"
@@ -287,7 +299,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="250">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button bg-primary text-white" type="button"
@@ -303,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="400">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button bg-primary text-white" type="button"
@@ -319,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="550">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button bg-primary text-white" type="button"
@@ -335,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="700">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button bg-primary text-white" type="button"
@@ -351,7 +363,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="850">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button bg-primary text-white" type="button"
@@ -424,6 +436,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: false, // <-- ubah ke false
+                duration: 900,
+                easing: 'ease-in-out',
+            });
+        </script>
         <script src="script.js"></script>
 </body>
 
