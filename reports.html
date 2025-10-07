@@ -58,18 +58,71 @@
     <!-- Navbar End -->
 
     <!-- Title -->
-    <section id="reports">
-        <div class="container py-5 mt-5">
+    <section id="reports" class="py-5">
+        <div class="container mt-5">
             <!-- Header -->
-            <div class="mt-5 text-center">
-                <h2 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000">All Reports</h2>
-                <p class="lh-lg text-muted" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Dolorum ut repudiandae et, perferendis alias quas
-                    asperiores expedita sit necessitatibus cum?</p>
+            <div class="d-flex justify-content-md-between justify-content-center align-items-center flex-wrap mb-4">
+                <div class="mt-5 text-center text-md-start">
+                    <h2 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000">All Reports
+                    </h2>
+                    <p class="lh-lg text-muted" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt! Fugit commodi
+                        voluptate voluptatibus hic nostrum. Ullam odio non quas.</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary shadow-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-plus me-2"></i>Add Report</button>
+                </div>
             </div>
         </div>
     </section>
     <!-- Title End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel"><i
+                            class="fa-solid fa-pen-to-square me-2"></i>Modal title</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <form action="">
+                    <div class="modal-body p-4">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Add New Report</label>
+                            <input class="form-control" type="text" placeholder="Report Title">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Category</label>
+                            <select class="form-select" name="" id="">
+                                <option value="">Select Category</option>
+                                <option value="">Academic</option>
+                                <option value="">Facility</option>
+                                <option value="">Anonymous</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Report Details</label>
+                            <textarea class="form-control" rows="4" name="" id=""
+                                placeholder="Put your report details here..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Upload Photo</label>
+                            <input class="form-control" type="file" name="" id="" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                                class="fa-solid fa-xmark me-2"></i>Close</button>
+                        <button type="button" class="btn btn-primary"><i class="fa-solid fa-paper-plane me-2"></i>Send
+                            Report</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Filter & Search -->
     <div class="row g-3 mb-5 mx-5">
@@ -97,7 +150,7 @@
 
         <div class="col-md-2">
             <button class="btn btn-primary w-100 shadow-sm">
-                <i class="bi bi-funnel"></i>
+                <i class="fa-solid fa-filter me-2"></i>
                 Filter
             </button>
         </div>
